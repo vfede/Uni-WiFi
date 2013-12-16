@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roma Tre WiFi", "Uniroma3 WiFi\Roma Tre WiFi.csproj", "{DF4C1908-251E-48C5-BE5C-4EE9D8AD7F65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF4C1908-251E-48C5-BE5C-4EE9D8AD7F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4C1908-251E-48C5-BE5C-4EE9D8AD7F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4C1908-251E-48C5-BE5C-4EE9D8AD7F65}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DF4C1908-251E-48C5-BE5C-4EE9D8AD7F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4C1908-251E-48C5-BE5C-4EE9D8AD7F65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF4C1908-251E-48C5-BE5C-4EE9D8AD7F65}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

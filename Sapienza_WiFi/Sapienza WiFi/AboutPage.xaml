@@ -1,0 +1,54 @@
+﻿<local:BasePage
+    xmlns:local="clr-namespace:Sapienza_WiFi"
+    x:Class="Sapienza_WiFi.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    toolkit:TiltEffect.IsTiltEnabled="True"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    Background="Blue"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True"
+    shell:SystemTray.Opacity="0">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Name="TitlePanel" Grid.Row="0" Margin="12,24,0,0">
+            <TextBlock Name="ApplicationTitle" Text="Università Sapienza - WiFi Login" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Name="PageTitle" Text="About" Margin="12,0,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <Grid Name="ContentPanel" Grid.Row="1" Margin="24">
+            <TextBlock TextWrapping="Wrap" Text="{Binding Path=Strings.ABOUT, Source={StaticResource l10n}}"/>
+            <Button Content="{Binding Path=Strings.EMAIL, Source={StaticResource l10n}}" Width="400" Height="72" HorizontalAlignment="Left" Margin="0,340,0,0" VerticalAlignment="Top" Click="EmailButton_Click"/>
+            <Button Content="{Binding Path=Strings.RATE, Source={StaticResource l10n}}"  Width="400" Height="72" HorizontalAlignment="Left" Margin="0,420,0,0" VerticalAlignment="Top" Click="RateButton_Click"/>
+            <HyperlinkButton Name="Credits"
+                             Content="{Binding Path=Strings.BROUGHT_BY, Source={StaticResource l10n}}"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Bottom"
+                             Margin="0,0,0,24"
+                             FontSize="{StaticResource PhoneFontSizeSmall}"
+                             Foreground="{StaticResource PhoneSubtleBrush}"
+                             Click="Credits_Click"/>
+            <HyperlinkButton Name="CreditsTap"
+                             Content="{Binding Path=Strings.MORE_APPS, Source={StaticResource l10n}}"
+                             HorizontalAlignment="Left"      
+                             VerticalAlignment="Bottom"
+                             FontSize="{StaticResource PhoneFontSizeSmall}"
+                             Foreground="{StaticResource PhoneSubtleBrush}"
+                             Click="Credits_Click"/>
+        </Grid>
+    </Grid>
+
+</local:BasePage>
